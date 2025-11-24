@@ -261,7 +261,7 @@
                 <div class="scroll-item category-card rounded-2xl shadow-xl overflow-hidden cursor-pointer"
                     onclick="selectCategory('model9', this, 9, 20999)">
                     <div class="bg-gradient-to-br from-pink-100 to-pink-200 h-48 overflow-hidden">
-                        <img src="assets/product.jpeg" alt="Model 1" class="w-full h-full object-cover">
+                        <img src="assets/product1.jpeg" alt="Model 1" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 bg-white">
                         <h3 class="text-xl font-bold text-gray-800 text-center mb-2">طقم ال 9 أفراد</h3>
@@ -284,7 +284,7 @@
                 <div class="scroll-item">
                     <div
                         class="product-img bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl h-64 shadow-lg overflow-hidden">
-                        <img src="assets/Catalog1.jpeg" alt="Gallery 1" class="w-full h-full object-cover">
+                        <img src="assets/catalogm.jpeg" alt="Gallery 1" class="w-full h-full object-cover">
                     </div>
                     <p class="text-center mt-3 text-gray-700 font-semibold">استمتع معنا بعروضنا المميزة</p>
                 </div>
@@ -606,11 +606,9 @@
             if (city === 'القاهرة' || city === 'الجيزة') {
                 shippingCost = 0;
             } else if (tier2Cities.includes(city)) {
-                shippingCost = 1000;
+                shippingCost = 500;
             } else if (tier3Cities.includes(city)) {
                 shippingCost = 1500;
-            } else if (city) { // Other cities not explicitly listed in tiers, using a default of 500 LE
-                shippingCost = 500;
             }
             // ------------------------------------
 
@@ -651,11 +649,9 @@
             if (city === 'القاهرة' || city === 'الجيزة') {
                 shippingCost = 0;
             } else if (tier2Cities.includes(city)) {
-                shippingCost = 1000;
+                shippingCost = 500;
             } else if (tier3Cities.includes(city)) {
                 shippingCost = 1500;
-            } else if (city) {
-                shippingCost = 500;
             }
 
             const totalPrice = productsPrice + shippingCost;
